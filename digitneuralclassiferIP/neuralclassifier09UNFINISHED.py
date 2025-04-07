@@ -1,3 +1,21 @@
+# Code source: Gaël Varoquaux
+# Modified for documentation by Jaques Grobler
+# License: BSD 3 clause
+
+import matplotlib.pyplot as plt
+
+from sklearn import datasets
+
+# Load the digits dataset
+digits = datasets.load_digits()
+
+# Display the last digit
+plt.figure(1, figsize=(3, 3))
+plt.imshow(digits.images[-1], cmap=plt.cm.gray_r, interpolation="nearest")
+plt.show()
+
+
+
 import cv2
 import numpy as np
 import glob
